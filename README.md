@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a command-line utility written in Rust that reads a file and outputs its contents in hexadecimal format (hexdump). The program allows an optional argument to limit the number of bytes read from the file. It is modeled after the Linux implementation of hexdump.
+This project is a command-line utility written in Rust that reads a file and outputs its contents in little-endian hexadecimal format (hexdump). The program allows an optional argument to limit the number of bytes read from the file. It is modeled after the Linux implementation of hexdump.
 
 ## Features
 - Outputs the content of a file in a hexadecimal format, similar to the Linux `hexdump` command.
@@ -44,7 +44,7 @@ For a file with the following content in bytes: `00 01 02 03`:
 00000000 0100 0302
 ```
 
-For larger files, the output will be formatted in 16-byte chunks per line, displaying the hexadecimal values for readability.
+For larger files, the output will be formatted in 16-byte chunks per line.
 
 ## Dependencies
 
